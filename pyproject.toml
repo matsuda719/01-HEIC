@@ -28,6 +28,3 @@ heic-to-jpg-gui = "heic_to_jpg.gui:main"
 
 [tool.setuptools.packages.find]
 include = ["heic_to_jpg*"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
