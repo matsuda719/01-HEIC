@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heic-to-jpg"
+version = "0.1.0"
+description = "Convert HEIC/HEIF images to JPG with EXIF/orientation preservation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pillow-heif",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "hypothesis",
+]
+
+[project.scripts]
+heic-to-jpg = "heic_to_jpg.cli:main"
+
+[project.gui-scripts]
+heic-to-jpg-gui = "heic_to_jpg.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["heic_to_jpg*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

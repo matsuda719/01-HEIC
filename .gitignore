@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Personal test images / conversion output (do NOT commit personal photos)
+*.heic
+*.HEIC
+*.heif
+*.HEIF
+_test_out/
+_test_meta/
+
+# OS
+.DS_Store
+Thumbs.db
